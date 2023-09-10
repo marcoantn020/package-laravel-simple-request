@@ -14,14 +14,13 @@ trait ConsumeServiceExternalTrait
     )
     {
         return $this->headers($headers)
-            ->$method($this->url . $endpoint, $formsParams);
+            ->$method($endpoint, $formsParams);
     }
 
     public function headers(array $headers = []): \Illuminate\Http\Client\PendingRequest
     {
         $headers[] = [
-            'Accept' => 'application/json',
-            'Authorization' => $this->token
+            'Accept' => 'application/json'
         ];
         return Http::withHeaders($headers);
     }
