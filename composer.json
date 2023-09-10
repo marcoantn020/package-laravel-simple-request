@@ -1,0 +1,19 @@
+{
+    "name": "marcoantn020/microservices-common",
+    "description": "Files utils microservices",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Marcoantn020\\MicroservicesCommon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marcoantn020",
+            "email": "notfound@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
